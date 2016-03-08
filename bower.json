@@ -1,0 +1,26 @@
+{
+  "name": "comeact-project",
+  "version": "0.0.0",
+  "description": "comeact-ui-lib",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "n",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-resource": "~1.4.3",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular-animate": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~0.13.0",
+    "components-font-awesome": "~4.4.0"
+  }
+}

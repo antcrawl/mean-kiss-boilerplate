@@ -1,0 +1,11 @@
+{{#section 'head'}}
+	{{#each cssdashboardAssets}}
+		<link href="{{this}}" rel="stylesheet" ></link>
+	{{/each}}
+{{/section}}
+<section data-ui-view></section>
+{{#section 'footer'}}
+	{{#each jsdashboardAssets}}
+		<script src="{{this}}"  ></script>
+	{{/each}}
+{{/section}}

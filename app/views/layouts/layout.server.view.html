@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+{{#if indexPage}}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+{{else}}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+{{/if}}
+	<head>
+		<title>{{title}}</title>
+		<!-- General META -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- Semantic META -->
+		<meta name="keywords" content="{{keywords}}">
+		<meta name="description" content="{{description}}">
+		<!-- Facebook META -->
+		<meta property="fb:app_id" content="{{facebookAppId}}">
+		<meta property="og:site_name" content="{{title}}">
+		<meta property="og:title" content="{{title}}">
+		<meta property="og:description" content="{{description}}">
+		<meta property="og:url" content="{{url}}">
+		<meta property="og:image" content="/img/brand/logo.png">
+		<meta property="og:type" content="website">
+		<!-- Twitter META -->
+		<meta name="twitter:title" content="{{title}}">
+		<meta name="twitter:description" content="{{description}}">
+		<meta name="twitter:url" content="{{url}}">
+		<meta name="twitter:image" content="/img/brand/logo.png">
+		<!-- Fav Icon -->
+		<link href="/dist/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		{{#each cssassets}}
+			<link href="{{this}}" rel="stylesheet" ></link>
+		{{/each}}
+		 {{{_sections.head}}}
+		
+	</head>
+	<body>
+		{{{body}}}
+		{{#each jsassets}}
+			<script src="{{this}}"  ></script>
+		{{/each}}
+		{{{_sections.footer}}}
+		
+	</body>
+</html>
