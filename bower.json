@@ -1,7 +1,7 @@
 {
-  "name": "comeact-project",
+  "name": "mean-kiss-boilerplate",
   "version": "0.0.0",
-  "description": "comeact-ui-lib",
+  "description": "mean-kiss-boilerplate",
   "moduleType": [
     "amd"
   ],

@@ -2,7 +2,7 @@
 
 module.exports = {
     app: {
-        title: 'ComeAct',
+        title: 'mean-kiss-boilerplate',
         description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
         keywords: 'mongodb, express, angularjs, node.js, mongoose, passport'
     },
@@ -11,18 +11,7 @@ module.exports = {
     sessionSecret: 'MEAN',
     sessionCollection: 'sessions',
     projectPaths: {
-        cruxDir: '/comeact-project/',
-        clientTemplatesDir: '/comeact-project/app-templates/client/',
-        serverTemplatesDir: '/comeact-project/app-templates/server/',
-        angularDir: '/comeact-project/app-templates/client/angular/public/',
-        htmlDir: '/comeact-project/app-templates/client/basic/public/',
-        angularTemplates: '/comeact-project/app-templates/client/angular/templates/',
-        angularBlankTemplate: '/comeact-project/app-templates/client/angular/templates/blank',
-        htmlBlankTemplate: '/comeact-project/app-templates/client/basic/templates/blank',
-        angularRoutingConfig: 'config/config.json',
-        metaPages: '_metadata/pages.json',
-        metaStyles: '_metadata/styles.json',
-        userDir: '/home/ux/comeact/tmp/projects/'
+        meanDir: '/mean-kiss-boilerplate/'
     },
     modules: {
         assets: {

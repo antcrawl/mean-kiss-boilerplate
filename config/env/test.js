@@ -1,10 +1,10 @@
 "use strict";
 
 module.exports = {
-	db: "mongodb://localhost/mean-test",
+	db: "mongodb://localhost/mean-test-project",
 	port: 3001,
 	app: {
-		title: "MEAN.JS - Test Environment"
+		title: "mean-kiss-boilerplate"
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || "APP_ID",

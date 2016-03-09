@@ -1,4 +1,4 @@
-angular.module("index").directive("cruxCustomLoad", function($compile) {
+angular.module("index").directive("customLoad", function($compile) {
     return {
         restrict: "A",
         link: function(scope,element,attrs){

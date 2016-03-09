@@ -1,9 +1,9 @@
 "use strict";
 
 module.exports = {
-	db: "mongodb://localhost/cruxproject",
+	db: "mongodb://localhost/meanproject",
 	app: {
-		title: "ComeAct"
+		title: "mean-kiss-boilerplate"
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || "APP_ID",

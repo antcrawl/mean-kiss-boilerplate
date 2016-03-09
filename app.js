@@ -36,4 +36,4 @@ app.listen(config.port);
 exports = module.exports = app;
 
 // Logging initialization
-console.log('Connect application started on port ' + config.port);
+console.log('Mean-kiss-boilerplate application started on port ' + config.port);
