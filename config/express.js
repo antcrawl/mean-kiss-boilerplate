@@ -26,12 +26,6 @@ var express = require('express'),
 module.exports = function(db) {
     // Initialize express app
     var app = express();
-
-    // Globbing model files
-    //config.getGlobbedFiles('./app/models/**/*.js').forEach(function(modelPath) {
-    //require(path.resolve(modelPath));
-    //});
-
     // Setting application local variables
     app.locals.title = config.app.title;
     app.locals.description = config.app.description;
@@ -104,103 +98,6 @@ module.exports = function(db) {
         type: 'text/*'
     }));
 
-    // *************** Import and View Data Model:: START ***************
-    //var strFileUploadPath = './uploads/';
-
-    /*fs.exists(strFileUploadPath, function (exists) {
-	  	console.log('express.js::#:: fs.exists():: exists: ', exists);
-	});*/
-
-    //fs.mkdir(strFileUploadPath, function (err) {	// 0777 || 0755, 0766
-    //if (err)
-    //{
-    //throw err;
-    //console.log('');
-    //console.log('express.js::#:: fs.mkdir():: err: ', err);
-    //console.log('express.js::#:: fs.mkdir():: Error, Folder ', './uploads/', ' already exists!');
-    //}
-    //else
-    //{
-    //console.log('express.js::#:: fs.mkdir():: Success, Folder ', './uploads/', ' does not exist. So, it has been created!');
-    //}
-    //});
-
-    //app.use(multer({dest: strFileUploadPath,
-    //onParseStart: function () {
-    //console.log('express.js::#:: onParseStart(): ', new Date());
-    //},
-    //onParseEnd: function (req, next) {
-    //console.log('express.js::#:: onParseEnd():: req.body: ', req.body);
-    //console.log('express.js::#:: onParseEnd():: req.files: ', req.files);
-
-    //console.log('express.js::#:: onParseEnd():: req.files.file[0].path: ', req.files.file[0].path);
-
-    //fs.unlink(req.files.file[0].path, function (err) {
-    //if (err)
-    //{
-    //throw err;
-    //console.log('express.js::#:: fs.mkdir():: err: ', err);
-    //}
-    //else
-    //{
-    //console.log('express.js::#:: onParseEnd():: fs.unlink(): Success, File ', req.files.file[0].path, ' has been deleted/removed after Uploading and Parsing!');
-    //}
-    //});
-
-    //next();
-    //},
-    //includeEmptyFields: true,
-    //putSingleFilesInArray: true, // false, true
-    //onFileUploadStart: function (file, req, res) {
-    //console.log('express.js::#:: onFileUploadStart():: file: ', file);
-    //},
-    //onFileUploadComplete: function (file, req, res) {
-    //console.log('express.js::#:: onFileUploadComplete():: file: ', file);
-    //},
-    /*onFileSizeLimit: function (file) {
-			console.log('express.js::#:: onFileSizeLimit(): ', file)
-		},*/
-    /*onFilesLimit: function () {
-			console.log('express.js::#:: onFilesLimit(): Crossed file limit!')
-		},*/
-    /*onFieldsLimit: function () {
-			console.log('express.js::#:: onFieldsLimit(): Crossed fields limit!')
-		},*/
-    /*onPartsLimit: function () {
-			console.log('express.js::#:: onPartsLimit(): Crossed parts limit!')
-		},*/
-    /*limits: {
-		  	fieldNameSize: 100, // 100 bytes
-			files: 2, // Infinity
-			fields: 5, // Infinity
-			fileSize: 700, // Infinity
-			fieldSize: 1 // 1 MB
-		},*/
-    /*rename: function (fieldname, filename) {
-		  //rename: function (fieldname, filename, req, res) {
-		  	console.log('express.js::#:: rename(): ');
-		    return filename.replace(/\W+/g, '-').toLowerCase() + Date.now()
-		},*/
-    /*changeDest: function(dest, req, res) {
-		   	console.log('express.js::#:: changeDest(): ');
-		    return dest + '/user1'; 
-		},*/
-    //defCharset: 'utf8',
-    //inMemory: true, // false
-    //onError: function (error, next) {	
-    //console.log('express.js::#:: onError():: error: ', error);
-
-    //next(error);
-    //},
-    //onFileUploadData: function (file, data) {
-    //onFileUploadData: function (file, data, req, res) {
-    //file.data = data;
-    //console.log('express.js::#:: onFileUploadData():: file: ', file);
-    //console.log('express.js::#:: onFileUploadData():: file.data ', file.data);
-    //}
-    //}));
-    // *************** Import and View Data Model:: END ***************
-
     app.use(methodOverride());
 
     // Enable jsonp
@@ -217,10 +114,6 @@ module.exports = function(db) {
             collection: config.sessionCollection
         })
     }));
-
-    // use passport session
-    //app.use(passport.initialize());
-    //app.use(passport.session());
 
     // connect flash for flash messages
     app.use(flash());
