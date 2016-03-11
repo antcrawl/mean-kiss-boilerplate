@@ -63,37 +63,6 @@ module.exports = {
 
             ]
         },
-        dashboardAssets: {
-            lib: {
-                css: [
-
-                ],
-                js: [
-
-                ]
-            },
-            css: [
-                "public/modules/dashboard/assets/css/*.css"
-
-            ],
-            js: [
-                'public/config.js',
-                'public/application.js',
-                'public/modules/dashboard/dashboard.client.module.js',
-                'public/modules/dashboard/routes/*.js'
-
-            ],
-            tests: []
-        },
-        playgroundAssets: {
-            lib: {
-                css: [],
-                js: []
-            },
-            css: [],
-            js: [],
-            tests: []
-        },
         loginAssets: {
             lib: {
                 css: [
