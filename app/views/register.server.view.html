@@ -1,0 +1,20 @@
+<!-- {{#each cssloginAssets}}
+<link href="{{this}}" rel="stylesheet" ></link>
+{{/each}}
+header logo: style can be found in header.less
+<section data-ui-view></section>
+{{#each jsloginAssets}}
+<script src="{{this}}"  ></script>
+{{/each}} -->
+<!-- ./wrapper -->
+{{#section 'head'}}
+	{{#each cssregisterAssets}}
+		<link href="{{this}}" rel="stylesheet" ></link>
+	{{/each}}
+{{/section}}
+<section data-ui-view></section>
+{{#section 'footer'}}
+	{{#each jsregisterAssets}}
+		<script src="{{this}}"  ></script>
+	{{/each}}
+{{/section}}

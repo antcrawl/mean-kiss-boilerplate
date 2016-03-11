@@ -72,11 +72,24 @@ module.exports = {
             },
             css: [],
             js: [
-                'public/config.js',
-                'public/application.js',
                 'public/modules/login/login.client.module.js',
-                'public/modules/login/routes/*.js',
+                'public/modules/login/config/*.js',
                 'public/modules/login/controller/*.js'
+            ],
+            tests: []
+        },
+        registerAssets: {
+            lib: {
+                css: [
+                ],
+                js: [
+                ]
+            },
+            css: [],
+            js: [
+                'public/modules/register/register.client.module.js',
+                'public/modules/register/config/*.js',
+                'public/modules/register/controller/*.js'
             ],
             tests: []
         }

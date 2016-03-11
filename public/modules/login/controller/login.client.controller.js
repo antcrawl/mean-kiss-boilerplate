@@ -13,19 +13,5 @@ angular.module("login").controller('loginController', ["$scope", "$http",
             })
 
         }
-        $scope.register = function() {
-            if (angular.equals($scope.register.password, $scope.register.confirmPassword)) {
-                $http.post(
-                    'register', {
-                        username: $scope.register.username,
-                        password: $scope.register.password
-
-                    }
-                ).then(function(response) {
-                    alert(response.data);
-                })
-
-            }
-        }
     }
 ]);
