@@ -10,7 +10,13 @@ angular.module("register").controller('registerController', ["$scope", "$http",
 
                     }
                 ).then(function(response) {
-                    alert(response.data);
+                    if(response.data["route"] != undefined){
+                        window.location = response.data["route"];
+                   }
+                    else{
+                         alert(response.data);
+                    }
+                   
                 })
 
             }

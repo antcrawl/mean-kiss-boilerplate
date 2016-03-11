@@ -11,7 +11,7 @@ exports.validateLogin = function(req, res) {
             console.log(user);
             res.redirect("/");
         } else {
-            res.redirect("/login");
+            res.redirect("/register");
         }
     })
 
